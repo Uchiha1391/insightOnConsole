@@ -1,0 +1,10 @@
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\bin\Debug\TestingOdinSerializerWithoutUnity.exe.config
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\bin\Debug\TestingOdinSerializerWithoutUnity.exe
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\bin\Debug\TestingOdinSerializerWithoutUnity.pdb
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\obj\Debug\TestingOdinSerializerWithoutUnity.csprojAssemblyReference.cache
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\obj\Debug\TestingOdinSerializerWithoutUnity.csproj.CoreCompileInputs.cache
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\obj\Debug\TestingOdinSerializerWithoutUnity.csproj.CopyComplete
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\obj\Debug\TestingOdinSerializerWithoutUnity.exe
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\obj\Debug\TestingOdinSerializerWithoutUnity.pdb
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sia\source\repos\TestingOdinSerializerWithoutUnity\bin\Debug\Newtonsoft.Json.xml
