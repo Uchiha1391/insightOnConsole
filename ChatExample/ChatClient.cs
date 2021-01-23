@@ -5,17 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Insight;
 
-namespace TestingOdinSerializerWithoutUnity
+namespace Insight
 {
-    class ChatClient
+    public class ChatClient
     {
         public ChatClient(InsightClient clientSocket)
         {
             _clientSocket = clientSocket;
         }
+
         static readonly ILogger Logger = LogFactory.GetLogger(typeof(ChatClient));
         public string ChatLog;
         InsightClient _clientSocket;
+
         /// <summary>
         /// 
         /// </summary>
@@ -29,6 +31,7 @@ namespace TestingOdinSerializerWithoutUnity
                 Data = Data
             });
         }
+
         void RegisterHandlers()
         {
             _clientSocket.RegisterHandler<ChatMsg>(HandleChatMsg);
@@ -48,7 +51,7 @@ namespace TestingOdinSerializerWithoutUnity
         //Has server control the username (MasterServer Example)
         public void SendChatMsg(string data)
         {
-            _clientSocket.Send(new ChatMsg() { Data = data });
+            _clientSocket.Send(new ChatMsg() {Data = data});
         }
     }
 }

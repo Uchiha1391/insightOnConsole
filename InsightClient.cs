@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TestingOdinSerializerWithoutUnity;
 
 namespace Insight
 {
@@ -22,6 +21,17 @@ namespace Insight
 
         public InsightClient()
         {
+            InitalizeInsight();
+        }
+
+
+        public InsightClient(ushort PortNumber)
+        {
+            if (transport != null) transport.SetPortNumber(PortNumber);
+            InitalizeInsight();
+        }
+        private void InitalizeInsight()
+        {
             if (AutoStart)
             {
                 StartInsight();
@@ -39,6 +49,8 @@ namespace Insight
 
             Task.Run(UpdateLoop);
         }
+
+
 
         //public virtual void Start()
         //{
@@ -151,7 +163,7 @@ namespace Insight
 
             NetworkWriter writer = new NetworkWriter();
             int msgType = GetId(default(T) != null ? typeof(T) : msg.GetType());
-            writer.WriteUInt16((ushort) msgType);
+            writer.WriteUInt16((ushort)msgType);
 
             int callbackId = 0;
             if (callback != null)
@@ -160,7 +172,7 @@ namespace Insight
                 callbacks.Add(callbackId, new CallbackData()
                 {
                     callback = callback,
-                    timeout = MyTime.GetElapsedTImeInSeconds + callbackTimeout
+                    timeout = MyTime.GetElapsedTImeInSeconds+ callbackTimeout
                 });
             }
 
@@ -168,6 +180,7 @@ namespace Insight
 
             //Writer<T>.write.Invoke(writer, msg);
             //transport.ClientSend(0, new ArraySegment<byte>(writer.ToArray()));
+
 
 
             #region my custom serializer injection
@@ -178,10 +191,11 @@ namespace Insight
 
             List<byte> Templist = new List<byte>();
             Templist.AddRange(writer.ToArray()); // mirror writer data
-            Templist.AddRange(myWriter.GetBuffer); // my writer data
+            Templist.AddRange(myWriter.GetBuffer);// my writer data
             transport.ClientSend(0, new ArraySegment<byte>(Templist.ToArray()));
 
             #endregion
+
         }
 
         void HandleCallbackHandler(CallbackStatus status, NetworkReader reader)

@@ -5,9 +5,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{959E49F8-830F-4D55-828B-92F6B6466320}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>TestingOdinSerializerWithoutUnity</RootNamespace>
-    <AssemblyName>TestingOdinSerializerWithoutUnity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InsightOnConsole</RootNamespace>
+    <AssemblyName>InsightOnConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -30,6 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">

@@ -194,6 +194,9 @@ namespace Insight
         /// <returns>the size in bytes that can be sent via the provided channel</returns>
         public abstract int GetMaxPacketSize(int channelId = Channels.DefaultReliable);
 
+        public abstract void SetPortNumber(ushort portNumber);
+
+
         /// <summary>
         /// Shut down the transport, both as client and server
         /// </summary>

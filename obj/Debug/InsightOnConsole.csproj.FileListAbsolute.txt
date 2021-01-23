@@ -1,10 +1,10 @@
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\TestingOdinSerializerWithoutUnity.exe.config
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\TestingOdinSerializerWithoutUnity.exe
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\TestingOdinSerializerWithoutUnity.pdb
 C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\Newtonsoft.Json.dll
 C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\Newtonsoft.Json.xml
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.csprojAssemblyReference.cache
 C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.csproj.CoreCompileInputs.cache
 C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.csproj.CopyComplete
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\TestingOdinSerializerWithoutUnity.exe
-C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\TestingOdinSerializerWithoutUnity.pdb
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\InsightOnConsole.dll.config
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\InsightOnConsole.dll
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\bin\Debug\InsightOnConsole.pdb
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.dll
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.pdb
+C:\Users\sia\source\repos\InsightOnConsole\insightOnConsole\obj\Debug\InsightOnConsole.csprojAssemblyReference.cache

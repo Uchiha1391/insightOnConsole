@@ -18,7 +18,7 @@ namespace Mirror
         // "tcp4" means tcp with 4 bytes header, network byte order
         public const string Scheme = "tcp4";
 
-        public ushort port = 7000;
+        public ushort port = 7001;
 
         public bool NoDelay = true;
 
@@ -265,6 +265,11 @@ namespace Mirror
         public override void ServerStop() => server.Stop();
 
         // common
+        public override void SetPortNumber(ushort portNumber)
+        {
+            port = portNumber;
+        }
+
         public override void Shutdown()
         {
             Console.WriteLine("TelepathyTransport Shutdown()");
